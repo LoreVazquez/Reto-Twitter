@@ -2,6 +2,7 @@ var newTweet = document.getElementById("new-tweet");
 var tweet = document.getElementById("tweet");
 var msg = document.getElementById("msg");
 var counter=document.getElementById('counter');
+var general = document.getElementById("general");
 
 tweet.addEventListener("click", newMsg);
 /* Funcion para agregar un tweet*/
@@ -17,7 +18,7 @@ function newMsg(){
     var generalTextBox = document.createElement("div");
     var textBox = document.createElement("p");
     textBox.className="text-tweet";
-    msg.appendChild(generalTextBox);
+    general.appendChild(generalTextBox);
     generalTextBox.appendChild(textBox);
     textBox.appendChild(document.createTextNode(text));
     counter.innerHTML = 140;
